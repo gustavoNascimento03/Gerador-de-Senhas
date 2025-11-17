@@ -1,0 +1,121 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.titleLabel {
+    display: block;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.optionsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.radioLabel {
+    display: block;
+}
+
+.radioInput {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.radioTile {
+    padding: 0.75rem;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.radioInput:checked + .radioTile {
+    background-color: #4f46e5;
+    font-weight: 700;
+}
+
+.optionsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .optionsGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.optionItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #374151;
+    border-radius: 0.5rem;
+}
+
+.checkboxInput {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 0.25rem;
+    border: 1px solid #6b7280;
+    background-color: transparent;
+    accent-color: #6366f1;
+
+    transition: box-shadow 0.2s ease;
+}
+
+.checkboxInput:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #6366f1;
+}
+
+.optionLabel {
+    display: block;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.optionItem {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #374151;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.optionItem:hover {
+    background-color: #4b5563;
+}
+
+.checkboxInput {
+    height: 1.25rem; /* h-5 */
+    width: 1.25rem; /* w-5 */
+    accent-color: #6366f1;
+
+    border-radius: 0.25rem;
+    border: 1px solid #6b7280;
+    margin: 0;
+}
+
+.checkboxInput:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #6366f1;
+}

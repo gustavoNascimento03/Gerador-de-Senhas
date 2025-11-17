@@ -4,8 +4,8 @@ Criar os componentes
 Criar Root
 Montar Pg principal
 
-git init
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/gustavoNascimento03/Gerador-de-Senhas.git
+!!ARRUMAR OS ESTILOS!!
+
+git add .
+git commit -m "XXX"
 git push -u origin main
