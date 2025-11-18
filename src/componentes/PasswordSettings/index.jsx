@@ -150,7 +150,7 @@ export function PasswordSettings({
                         htmlFor="startsWithLetter"
                         className={styles.optionLabel}
                     >
-                        Forçar início com Letra (a-z, A-Z)
+                        Forçar início com Letra (a-Z)
                     </label>
                 </div>
             </div>

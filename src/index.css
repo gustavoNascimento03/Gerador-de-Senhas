@@ -1,53 +1,17 @@
-:root {
-}
-
-.btn-gerar-animado {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    padding: 0.9rem 2rem;
-    margin: 0;
-    font-family: inherit;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    border-radius: 500px;
-    overflow: hidden;
-    background: #66ff66;
-    color: ghostwhite;
-}
-
-.btn-gerar-animado span {
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-}
-
-.btn-gerar-animado:hover span {
-    color: black;
-}
-
-.btn-gerar-animado::before,
-.btn-gerar-animado::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+html,
+body,
+#root {
     height: 100%;
-    z-index: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.btn-gerar-animado::before {
-    content: "";
-    background: #000;
-    width: 120%;
-    left: -10%;
-    transform: skew(30deg);
-    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-}
-
-.btn-gerar-animado:hover::before {
-    transform: translate3d(100%, 0, 0);
+.appContainer {
+    background-color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
